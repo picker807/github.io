@@ -1,0 +1,68 @@
+[
+    {
+      "image": "/images/577CACC2-2250-4F6E-90C0-2C84F1F0A306.jpeg",
+      "link": "https://example.com/slide1",
+      "text": "Slide 1",
+      "description" : "Match Heads"
+    },
+    {
+        "image": "/images/577CACC2-2250-4F6E-90C0-2C84F1F0A306.jpeg",
+        "link": "https://picker807.github.io/WDD330Final/",
+        "text": "Earthquake Map - WDD330 Final Project",
+        "description" : "WDD330 final"
+    },
+    {
+        "image": "/images/577CACC2-2250-4F6E-90C0-2C84F1F0A306.jpeg",
+        "link": "https://example.com/slide1",
+        "text": "Slide 1",
+        "description" : "Sleep outside"
+      },
+      {
+        "image": "/images/577CACC2-2250-4F6E-90C0-2C84F1F0A306.jpeg",
+        "link": "./local/Geolocation.html",
+        "text": "Geolocation Example",
+        "description" : "words here"
+      },  
+      {
+        "image": "/images/577CACC2-2250-4F6E-90C0-2C84F1F0A306.jpeg",
+        "link": "./local/CanvasFace.html",
+        "text": "Canvas Face Exercise",
+        "description" : "text"
+      },
+    {
+        "image": "/images/577CACC2-2250-4F6E-90C0-2C84F1F0A306.jpeg",
+      "link": "https://codepen.io/atpicker/pen/ExdmMYK",
+      "text": "Responsive Hamburger Alteration",
+      "description" : "words here"
+    },
+    {
+        "image": "/images/577CACC2-2250-4F6E-90C0-2C84F1F0A306.jpeg",
+      "link": "https://codepen.io/atpicker/pen/rNqpeBW?editors=1111",
+      "text": "HTML Form Verification",
+      "description" : "words here"
+    },
+    {
+        "image": "/images/577CACC2-2250-4F6E-90C0-2C84F1F0A306.jpeg",
+      "link":  "./local/form.html",
+      "text": "A Simple Form",
+      "description" : "words here"
+    },
+    {
+        "image": "/images/577CACC2-2250-4F6E-90C0-2C84F1F0A306.jpeg",
+      "link": "https://github.com/picker807/Sleep-Outside/blob/main/src/js/ShoppingCart.mjs",
+      "text": "Source Code for Sleep Outside Cart. Added a total to cart.",
+      "description" : "words here"
+    },
+    {
+        "image": "/images/577CACC2-2250-4F6E-90C0-2C84F1F0A306.jpeg",
+      "link": "./local/FetchExample/index.html",
+      "text": "Pokemon Fetch Example",
+      "description" : "words here"
+    },
+    {
+        "image": "/images/577CACC2-2250-4F6E-90C0-2C84F1F0A306.jpeg",
+      "link": "./local/prophets.html",
+      "text": "Prophets Template",
+      "description" : "words here"
+    }
+]
