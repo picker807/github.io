@@ -1,68 +1,93 @@
 [
+  {
+    "image": "/images/recommend.png",
+    "link": "./local/NeffRecommend.pdf",
+    "text": "Letter of Recommendation",
+    "description" : "A recommendation from my former university professor, Rick Neff, one of the most brilliant people I know. We are still in touch and discuss many of life's mysteries.",
+    "project": true
+  },
     {
-      "image": "/images/577CACC2-2250-4F6E-90C0-2C84F1F0A306.jpeg",
-      "link": "https://example.com/slide1",
-      "text": "Slide 1",
-      "description" : "Match Heads"
+      "image": "/images/matchheads.png",
+      "link": "https://play.google.com/store/apps/details?id=com.binarycocoa.matchheads&hl=en_US&gl=US",
+      "text": "Match Heads",
+      "description" : "An electronic card-matching game I helped develop at Binary Cocoa. I took the rough code, refined the mechanics, added a tutorial, all animations and polish. Download it at the Google Play store.",
+      "project": true
     },
     {
-        "image": "/images/577CACC2-2250-4F6E-90C0-2C84F1F0A306.jpeg",
+        "image": "/images/EarthquakeTracker.png",
         "link": "https://picker807.github.io/WDD330Final/",
-        "text": "Earthquake Map - WDD330 Final Project",
-        "description" : "WDD330 final"
+        "text": "Earthquake Map",
+        "description" : "Final project for Front End Web Development II. Get earthquake data from anywhere in the world. This site uses a couple of APIs and the Leafelt map library. Earthquake results are populated on a map with custom markers and popups. ",
+        "project": true
     },
     {
-        "image": "/images/577CACC2-2250-4F6E-90C0-2C84F1F0A306.jpeg",
-        "link": "https://example.com/slide1",
-        "text": "Slide 1",
-        "description" : "Sleep outside"
+        "image": "/images/SleepOutside.png",
+        "link": "https://superlative-wisp-1cfa3e.netlify.app/",
+        "text": "Sleep Outside",
+        "description" : "Group project for Front End Web Development II. A mock shopping site for outdoor gear. We were given mostly functional code, which we modified over several weeks adding functionality and features.",
+        "project": true
       },
       {
-        "image": "/images/577CACC2-2250-4F6E-90C0-2C84F1F0A306.jpeg",
+        "image": "/images/geolocation.png",
         "link": "./local/Geolocation.html",
         "text": "Geolocation Example",
-        "description" : "words here"
+        "description" : "An exercise in using a geolocation tracker and populating the user's location on a map.",
+        "project": false
       },  
       {
-        "image": "/images/577CACC2-2250-4F6E-90C0-2C84F1F0A306.jpeg",
+        "image": "/images/canvas.png",
         "link": "./local/CanvasFace.html",
         "text": "Canvas Face Exercise",
-        "description" : "text"
+        "description" : "An exercise in using canvas to draw shapes. Please don't make him angry.",
+        "project": false
       },
     {
-        "image": "/images/577CACC2-2250-4F6E-90C0-2C84F1F0A306.jpeg",
+        "image": "/images/hamburger.png",
       "link": "https://codepen.io/atpicker/pen/ExdmMYK",
       "text": "Responsive Hamburger Alteration",
-      "description" : "words here"
+      "description" : "An exercise in changing page properties based on page dimensions. The hamburger menu appears when screen is small and an alert is generated when the menu disappears.",
+      "project": false
     },
     {
-        "image": "/images/577CACC2-2250-4F6E-90C0-2C84F1F0A306.jpeg",
+        "image": "/images/formVerify.png",
       "link": "https://codepen.io/atpicker/pen/rNqpeBW?editors=1111",
       "text": "HTML Form Verification",
-      "description" : "words here"
+      "description" : "A simple exercise in html form verification",
+      "project": false
     },
     {
-        "image": "/images/577CACC2-2250-4F6E-90C0-2C84F1F0A306.jpeg",
+        "image": "/images/simpleForm.png",
       "link":  "./local/form.html",
       "text": "A Simple Form",
-      "description" : "words here"
+      "description" : "An exercise in creating a simple entry form in HTML",
+      "project": false
     },
     {
-        "image": "/images/577CACC2-2250-4F6E-90C0-2C84F1F0A306.jpeg",
-      "link": "https://github.com/picker807/Sleep-Outside/blob/main/src/js/ShoppingCart.mjs",
-      "text": "Source Code for Sleep Outside Cart. Added a total to cart.",
-      "description" : "words here"
+        "video": "/images/key-quest-crop.mp4",
+      "text": "Key Quest",
+      "description" : "A game-like security key generator for cryptocurrency. This was a commissioned project. The concept being that you do not need to write down your security key. Instead, go through the exact same activities on this game and it will produce your security key. You only need to remember what activities you did in the proper order. To my knowledge this has not been put into production and cannot be accessed online. ",
+      "project": true
     },
     {
-        "image": "/images/577CACC2-2250-4F6E-90C0-2C84F1F0A306.jpeg",
+      "image": "/images/IForgaveYou.png",
+    "link":  "https://www.audible.com/pd/I-Forgave-You-Yesterday-Audiobook/B0B331S79Q",
+    "text": "Narration: I Forgave You Yesterday",
+    "description" : "This is my first published book narration. You can listen to the sample on Audible.",
+    "project": true
+  },
+    
+    {
+        "image": "/images/poke.png",
       "link": "./local/FetchExample/index.html",
       "text": "Pokemon Fetch Example",
-      "description" : "words here"
+      "description" : "A simple exercise in changing parameters in an API",
+      "project": false
     },
     {
-        "image": "/images/577CACC2-2250-4F6E-90C0-2C84F1F0A306.jpeg",
+        "image": "/images/prophet.png",
       "link": "./local/prophets.html",
       "text": "Prophets Template",
-      "description" : "words here"
+      "description" : "A simple exercise in creating JSON to capture results from an API",
+      "project": true
     }
 ]

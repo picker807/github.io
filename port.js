@@ -1,57 +1,61 @@
-// Function to fetch slide data from JSON file
-async function fetchSlideData() {
-    try {
-      const response = await fetch('slides.json');
-      const data = await response.json();
-      return data;
-    } catch (error) {
-      console.log('Error fetching slide data:', error);
-      return [];
-    }
-  }
-  
-  // Function to generate dynamic HTML for slideshow and slide list
-  async function generateSlideshow() {
-    const slidesWrapper = document.querySelector('.slides-wrapper');
-    const slideList = document.querySelector('.slide-list');
-  
-    // Fetch slide data from JSON file
-    const slideData = await fetchSlideData();
-  
-    // Generate HTML for slideshow
-    let slidesHTML = '';
-    let slideListHTML = '';
-  
-    slideData.forEach((slide, index) => {
-      slidesHTML += `
-        <a href="${slide.link}" target="_blank" class="slide ${index === 0 ? 'active' : ''}">
-          <img src="${slide.image}" alt="Slide Image">
-          <div class="slide-content">
-            <h2>${slide.text}</h2>
-            <p>${slide.description}</p>
-            <a href="${slide.link}" target="_blank" class="slide-link">Learn More</a>
-          </div>
-        </a>
-      `;
-  
-      slideListHTML += `
-        <li class="slide-item">
-          <a href="${slide.link}" target="_blank">${slide.text}</a>
-        </li>
-      `;
+document.addEventListener("DOMContentLoaded", function () {
+  const examplesContainer = document.querySelector(".example-list");
+
+  function generateExamples(examplesData) {
+    const projectExamples = examplesData.filter((exampleData) => exampleData.project);
+    const nonProjectExamples = examplesData.filter((exampleData) => !exampleData.project);
+
+    const sortedExamplesData = [...projectExamples, ...nonProjectExamples];
+
+    sortedExamplesData.forEach((exampleData) => {
+      const exampleItem = createExampleItem(exampleData);
+      examplesContainer.appendChild(exampleItem);
     });
-  
-    // Update HTML in slideshow container and slide list
-    slidesWrapper.innerHTML = slidesHTML;
-    slideList.innerHTML = slideListHTML;
   }
-  
-  // Function to initialize the slideshow
-  function initSlideshow() {
-    // Generate the slideshow
-    generateSlideshow();
+
+  function createExampleItem(exampleData) {
+    let exampleItem;
+
+    if (exampleData.link && exampleData.link.length > 0) {
+      exampleItem = document.createElement("a");
+      exampleItem.href = exampleData.link;
+      exampleItem.target = "_blank";
+    } else {
+      exampleItem = document.createElement("div");
+    }
+
+    exampleItem.classList.add("example-item");
+
+    if (exampleData.image) {
+      const image = document.createElement("img");
+      image.src = exampleData.image;
+      exampleItem.appendChild(image);
+    } else if (exampleData.video) {
+      const video = document.createElement("video");
+      video.src = exampleData.video;
+      video.controls = true;
+      video.autoplay = true;
+      video.loop = true;
+      exampleItem.appendChild(video);
+    }
+
+    const title = document.createElement("h2");
+    title.textContent = exampleData.text;
+    exampleItem.appendChild(title);
+
+    const description = document.createElement("p");
+    description.textContent = exampleData.description;
+    exampleItem.appendChild(description);
+
+    return exampleItem;
   }
-  
-  // Call the initialization function
-  initSlideshow();
-    
+
+  fetch("slides.json")
+    .then((response) => response.json())
+    .then((data) => {
+      generateExamples(data);
+    })
+    .catch((error) => {
+      console.error("Error fetching examples:", error);
+    });
+});

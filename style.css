@@ -1,141 +1,83 @@
-/* Global Styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  /* Header Styles */
-  .header-container {
-    background-color: #222;
-    color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .title-group {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-right: auto;
-  }
-  
-  h1 {
-    font-size: 32px;
-    margin: 0;
-  }
-  
-  h2 {
-    font-size: 20px;
-    margin: 0;
-  }
-  
-  h3 {
-    font-size: 18px;
-    margin-top: 10px;
-  }
-  
-  .info {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  hr {
-    border: none;
-    border-top: 1px solid #fff;
-    margin: 20px 0;
-  }
-  
-/* Slideshow Container */
-.slideshow-container {
-    position: relative;
-    perspective: 1000px;
-    margin: 20px auto;
-    max-width: 800px;
-    height: 400px;
-    overflow: visible;
-  }
-  
-  .slides-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    animation: rotate-slides 20s infinite linear;
-  }
-  
-  .slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.5s;
-    transform-style: preserve-3d;
-  }
-  
-  .slide.active {
-    opacity: 1;
-  }
-  
-  .slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .slide-list {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-    text-align: center;
-  }
-  
-  .slide-item {
-    display: inline-block;
-    margin: 0 10px;
-  }
-  
-  .slide-item a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-  }
-  
-  /* Animation for Slideshow */
-  @keyframes rotate-slides {
-    0% {
-      transform: rotateY(0deg);
-    }
-    100% {
-      transform: rotateY(-360deg);
-    }
-  }
-  
-  
-  /* Navigation dots */
-  .dot {
-    height: 10px;
-    width: 10px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    margin: 0 5px;
-    cursor: pointer;
-  }
-  
-  .dot.active {
-    background-color: #222;
-  }
-  
-  
+.header-container {
+  text-align: center;
+  background-color: #f8f8f8;
+  padding: 20px;
+  background-image: linear-gradient(to bottom, #779f7a, #ebebeb);
+}
+
+.title-group {
+  margin-bottom: 10px;
+}
+
+.title-group h1 {
+  font-size: 32px;
+  color: #333;
+}
+
+.title-group h2 {
+  font-size: 20px;
+  color: #555;
+}
+
+.info {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.hr-line {
+  height: 1px;
+  background-color: #ddd;
+  margin: 20px 0;
+}
+
+.example-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.example-item {
+  position: relative;
+  width: 100%;
+  margin: 1.5%;
+  text-align: center;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.example-item img,
+.example-item video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.example-item h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #000; /* Set the desired text color */
+}
+
+.example-item p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #000; /* Set the desired text color */
+}
+
+.example-item a {
+  text-decoration: none;
+  color: var(--link-color);
+  cursor: var(--link-cursor);
+}
+
+.example-item[data-has-link="true"]:hover {
+  cursor: var(--link-cursor);
+  text-decoration: none;
+}
