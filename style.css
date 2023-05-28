@@ -44,7 +44,7 @@
   list-style: none;
   padding: 0;
 }
-
+ 
 .example-item {
   position: relative;
   width: 100%;
@@ -87,3 +87,4 @@
   cursor: var(--link-cursor);
   text-decoration: none;
 }
+
