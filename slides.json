@@ -7,7 +7,7 @@
     "project": true
   },
     {
-      "image": "/images/matchheads.PNG",
+      "image": "images/matchheads.png",
       "link": "https://play.google.com/store/apps/details?id=com.binarycocoa.matchheads&hl=en_US&gl=US",
       "text": "Match Heads",
       "description" : "An electronic card-matching game I helped develop at Binary Cocoa. I took the rough code, refined the mechanics, added a tutorial, all animations and polish. Download it at the Google Play store.",
