@@ -30,7 +30,7 @@
     {
         "video": "images/key-quest-crop.mp4",
       "text": "Key Quest",
-      "description" : "A game-like security key generator for cryptocurrency, created with Godot game engine. This was a commissioned project. The concept being that you do not need to write down your security key. Instead, go through the exact same activities on this game and it will produce your security key. You only need to remember what activities you did in the proper order. Background panels are placed randomly so the layout is always diferent. To my knowledge this has not been put into production and cannot be accessed online. ",
+      "description" : "A game-like security key generator for cryptocurrency, created with Godot game engine. This was a commissioned project and only a rough version was completed. Instead of writing down your security key, just complete the same actions in the same order and Key Quest will consistenly generate the same key. To my knowledge this has not been put into production and cannot be accessed online. ",
       "project": true
     },
     {
